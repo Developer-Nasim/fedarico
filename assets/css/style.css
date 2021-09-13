@@ -628,7 +628,10 @@ ul.dropdown-menu li:hover {
  background: #0090ff;
  border: none;
 }
-
+.feture-area.two_btns .feature-btns a.theme-btn {
+  margin-left: 0;
+  margin-right: 5px;
+}
 
  
  
