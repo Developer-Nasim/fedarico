@@ -22,10 +22,12 @@
     center: true,
     responsive: {
       0: {
-        items: 5
+        items: 5,
+        margin: 0,
       },
       767: {
-        items: 7
+        items: 7,
+        margin: 10,
       },
       992: {
         items: 11

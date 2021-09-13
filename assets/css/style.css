@@ -101,6 +101,10 @@ a{
   z-index: 99; 
   background: #fff;
 }
+.logo-area a {
+  display: block;
+  max-width: 200px;
+}
 .menu-area nav ul li {
   list-style: none;
   display: inline-block;
@@ -127,8 +131,7 @@ a.theme-btn {
   height: 45px;
   color: #ffffff;
   line-height: 42px;
-  border-radius: 8px;
-  border: 2px solid white;
+  border-radius: 8px; 
   transition: .3s;
 }
 a.theme-btn:hover{
@@ -145,15 +148,15 @@ a.theme-btn:hover{
 .bar a span {
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #222;
   display: block;
   position: relative;
   top: 17px;
   border-radius: 30px;
   transition: .3s;
 } 
-.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: 10px;border-radius: 30px;transition: .3s;} 
-.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: -10px;border-radius: 30px;transition: .3s;}
+.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #222;bottom: 10px;border-radius: 30px;transition: .3s;} 
+.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #222;bottom: -10px;border-radius: 30px;transition: .3s;}
  
 /* humbarger END */
  
@@ -171,10 +174,14 @@ a.theme-btn:hover{
   transition: .3s;
   margin-left: -400px;
   padding-left: 40px;
-  padding-top: 100px;
+  padding-top: 65px;
 }
 .siteBar{
   margin-left: 0; 
+}
+.mobile-menu img.logos {
+  max-width: 160px;
+  margin-top: -85px;
 }
 .mobile-menu ul#pills-tab {
   margin-top: 90px;
@@ -206,14 +213,11 @@ a.theme-btn:hover{
   font-size: 15px;
 } 
 .mobile-menu a.theme-btn {
-  margin-top: 60px;
-  margin-left: 0;
-} 
-.mobile-menu a.theme-btn {
-  margin-top: 60px;
+  margin-top: 31px;
   margin-left: 0;
   height: 45px;
   line-height: 45px;
+  color: #fff;
 }
 .mobile-menu .user a {
     display: block;
@@ -252,7 +256,9 @@ a.theme-btn:hover{
 /* Header-area END && Hero-area STARTED  */
  
 
-
+main{
+  overflow: hidden;
+}
 .hero-wrp h1 {font-size: 44px;}
 
 .hero-wrp ul {
@@ -267,8 +273,10 @@ a.theme-btn:hover{
 .hero-imgs {
   text-align: right;
   margin-right: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
-
 .hero-btns ul li {
   display: inline-block;
 }
@@ -319,6 +327,7 @@ a.theme-btn:hover{
   border-radius: 100px;
   padding: 5px;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .search form img {
@@ -471,10 +480,7 @@ a.theme-btn.gredient:hover i {
   margin: auto;
   width: 300px; 
   height: 60px; 
-}
-.row.align-items-center.fetures_blk {
-  margin-bottom: 100px;
-}
+} 
 
 .getLink h2 {
   font-weight: 600;
@@ -599,10 +605,11 @@ ul.dropdown-menu li:hover {
 .cookie_permission  a.theme-btn {
   border: none;
   border-radius: 0;
-  height: 41px;
+  height: 41px; 
+  width: 105px;
+  text-align: center;
+  padding: 0;
 }
-
-
 
 
 
