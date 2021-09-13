@@ -5,6 +5,7 @@ body {
   font-weight: 500; 
   color: #365984;
   font-size: 16px; 
+  padding-top: 75px;
 }
 img{
   max-width: 100%;
@@ -96,7 +97,10 @@ a{
 
 
 .header-area {
-  padding: 15px 0; 
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 99; 
   background: #fff;
@@ -567,8 +571,13 @@ ul.dropdown-menu li {
 ul.dropdown-menu li:hover {
   color: #5c1cb6;
 }
-
-
+.feature-btns {
+  display: flex;
+}
+.feature-btns a:last-child{
+  display: none;
+  margin-left: 10px;
+} 
 
 
 
@@ -611,6 +620,14 @@ ul.dropdown-menu li:hover {
   text-align: center;
   padding: 0;
 }
+.modal-footer button {
+ display: block;
+ margin: auto;
+ padding: 7px 30px;
+ font-size: 20px;
+ background: #0090ff;
+ border: none;
+}
 
 
  
@@ -635,9 +652,24 @@ body.dark .search form input,
 body.dark .search form span{
   color: #fff;
 }
+body.dark .modal-header {
+  background: #222121;
+  border-color: #666666;
+}
 
+body.dark  .modal-body {
+  background: #000;
+}
 
-
+body.dark .modal-footer {
+  background: #222121;
+  border-color: #666666;
+  text-align: center;
+}
+body.dark .modal-header button.btn-close { 
+  filter: invert(1);
+}
+  
 
 
 

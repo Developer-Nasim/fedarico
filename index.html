@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-
+  
        
     <!-- header-area START -->
     <div class="header-area">
@@ -35,8 +35,8 @@
                                 <li><a href="#">Catalogue</a></li>
                                 <li><a href="#">Your Cart</a></li> 
                                 <li><a href="#">Favourites</a></li> 
-                                <li><a href="#">Your Orders</a></li> 
-                                <li><a href="#" class="theme-btn">Get Started</a></li>    
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login">Your Orders</a></li> 
+                                <li><a href="#" class="theme-btn" data-bs-toggle="modal" data-bs-target="#signup">Get Started</a></li>    
                             </ul>
                         </nav>
                     </div>
@@ -63,8 +63,8 @@
                     <li><a href="#">Catalogue</a></li>
                     <li><a href="#">Your Cart</a></li> 
                     <li><a href="#">Favourites</a></li> 
-                    <li><a href="#">Your Orders</a></li> 
-                    <li><a href="#" class="theme-btn">Get Started</a></li>  
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login">Your Orders</a></li> 
+                    <li><a href="#" class="theme-btn" data-bs-toggle="modal" data-bs-target="#signup">Get Started</a></li>  
                 </ul>
             </nav> 
         </div> 
@@ -159,7 +159,10 @@
                         <div class="feture-wrp">
                             <h4>Monetize social power</h4>
                             <p>You can integrate your affiliate links, support box, wishlist to your Linkr page and monetize your content. Start monetizing on Linkr.bio today.</p>
-                            <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                            <div class="feature-btns">
+                                <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                                <a href="#" class="theme-btn gredient">More <i class="fal fa-long-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,7 +180,10 @@
                             <img src="assets/img/step_and_shaps/shap.png" class="last_shap" alt="">
                             <h4>Drive traffic </h4>
                             <p>Linkr.bio helps creators, influencers, entrepreneurs, and brands drive their traffic to the things they're promoting, and connect their followers.</p>
-                            <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                            <div class="feature-btns">
+                                <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                                <a href="#" class="theme-btn gredient">More <i class="fal fa-long-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-1 d-none d-md-block">
@@ -200,7 +206,10 @@
                             <img src="assets/img/step_and_shaps/shap2.png" class="last_shap" alt="">
                             <h4>Embed everywhere </h4>
                             <p>Share your Linkr.bio to every social platform and let the audience read all your content with the simplest present.</p>
-                            <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                            <div class="feature-btns">
+                                <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                                <a href="#" class="theme-btn gredient">More <i class="fal fa-long-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,7 +227,10 @@
                             <img src="assets/img/step_and_shaps/shap3.png" class="last_shap" alt="">
                             <h4>Drive traffic </h4>
                             <p>Linkr.bio helps creators, influencers, entrepreneurs, and brands drive their traffic to the things they're promoting, and connect their followers.</p>
-                            <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                            <div class="feature-btns">
+                                <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                                <a href="#" class="theme-btn gredient">More <i class="fal fa-long-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-1 d-none d-md-block">
@@ -241,7 +253,10 @@
                             <img src="assets/img/step_and_shaps/shap3.png" class="last_shap" alt="">
                             <h4>Embed everywhere </h4>
                             <p>Share your Linkr.bio to every social platform and let the audience read all your content with the simplest present.</p>
-                            <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                            <div class="feature-btns">
+                                <a href="#" class="theme-btn gredient">Get My Linkr <i class="fal fa-long-arrow-right"></i></a>
+                                <a href="#" class="theme-btn gredient">More <i class="fal fa-long-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -306,10 +321,70 @@
     <!-- Cookie_permission START -->
     <div class="cookie_permission">
         <p>We use cookies to improve your experience. By using our website, you consent to cookies. <a href="#">Learn more.</a></p>
-        <a href="" class="theme-btn">Got it!</a>
+        <a href="#" class="theme-btn">Got it!</a>
     </div>
     <!-- Cookie_permission END -->
 
+        <!-- Login Modal -->
+        <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">  
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="****">
+                    </div>
+                </div>
+                <div class="modal-footer"> 
+                <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Registration Modal -->
+        <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lname" class="form-label">last Name</label>
+                        <input type="text" class="form-control" id="lname" placeholder="last Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pass" placeholder="****">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass2" class="form-label">Retype Password</label>
+                        <input type="password" class="form-control" id="pass2" placeholder="****">
+                    </div>
+                </div>  
+                <div class="modal-footer"> 
+                <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
 
