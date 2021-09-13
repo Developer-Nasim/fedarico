@@ -133,6 +133,10 @@
     a.theme-btn.gredient:hover i {
         margin-left: 16px;
     }
+    .feture-wrp a.theme-btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
     .getLink {
         margin-top: 15px;
         margin-bottom: 100px;
