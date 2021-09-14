@@ -1,0 +1,551 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site Title Here</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">  
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body class="dark">
+         
+    <!-- Main START -->
+    <main>
+        <div class="profile-editing-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="user_bio">
+                            <img src="assets/img/user.png" id="blah" alt="">
+                            <a href="#">John Lincoln <span></span></a>
+                            <p><span>Bio -</span>“ <b id="keepHere">A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station </b> ”</p>
+                        </div>
+                        <div class="addBlockHere"></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="updatedNow">
+                            <div class="topArea">
+                                <label for="upImg" id="upImgBlk">
+                                    <input type="file" id="upImg" onchange="readURL(this);">
+                                </label>
+                                <div>
+                                    <button type="button" id="editBio" data-bs-toggle="modal" data-bs-target="#login">Edit Bio</button>
+                                    <button type="button" id="settingOptions" class="clOpSeting"><i class="fal fa-cog"></i></button>
+                                </div>
+                            </div>
+                            <div class="addSection">
+                                <form action="#">
+                                    <div class="headBar">
+                                        <button type="reset"><i class="far fa-trash-alt"></i></button>
+                                        <span>Block Settings</span> 
+                                        <button type="button" id="submit"><i class="fal fa-check"></i></button>
+                                    </div>
+                                    <div class="fields">
+                                        <input type="link" class="form-control" id="link" placeholder="http://url...">
+                                        <div class="col-auto">
+                                            <label class="visually-hidden" for="title">Title</label>
+                                            <div class="input-group">
+                                              <div class="input-group-text"><i class="far fa-image"></i></div>
+                                              <input type="text" class="form-control" id="title" placeholder="Title">
+                                            </div>
+                                        </div>
+                                        <label for="tags">
+                                            <input type="text" class="form-control" id="tags" placeholder="Prince tag ( label )">
+                                        </label>
+                                    </div>
+                                    <ul class="layoutStyle">
+                                        <li data-id="layout1"><img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-columns-user-interface-flatart-icons-lineal-color-flatarticons.png"/></li>
+                                        <li data-id="layout2"><img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-sidebar-user-interface-flatart-icons-lineal-color-flatarticons-2.png"/></li>
+                                        <li data-id="layout3" class="active"><img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-columns-user-interface-flatart-icons-lineal-color-flatarticons.png"/></li>
+                                        <li data-id="layout4"><img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-header-user-interface-flatart-icons-lineal-color-flatarticons.png"/></li> 
+                                    </ul>
+                                    <div class="blkRealtimeContents"> 
+                                        <a href="#" class="nameLink" data-id="layout3"><span class="mainTitle">Name your link</span><span class="tag">tag</span></a>
+                                    </div>
+                                    <ul class="BottomList">
+                                        <li><span><i class="fas fa-star"></i></span> Pop</li>
+                                        <li><span><i class="fal fa-eye-slash"></i></span> Hide</li>
+                                        <li><span><i class="fal fa-clock"></i></span> Schedule</li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main END --> 
+    
+    <!-- settings options -->
+    <div class="theSettings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="settingBlk"> 
+                        <h5><span>SETTINGS & STYLE</span> <button type="button" class="clOpSeting"><i class="fal fa-check"></i></button></h5>
+                        <div class="accordion" id="accordionExample"> 
+                            <div class="accordion-item"> 
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Theme </button> 
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="innerAccorContent"> 
+                                            <h6>Theme Color</h6> 
+                                            <div class="custom-radios">
+                                                <div>
+                                                    <input type="radio" id="color-1" name="color" value="color-1" checked>
+                                                    <label for="color-1">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-2" name="color" value="color-2">
+                                                    <label for="color-2">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-3" name="color" value="color-3">
+                                                    <label for="color-3">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-4" name="color" value="color-4">
+                                                    <label for="color-4">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-5" name="color" value="color-1">
+                                                    <label for="color-5">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-6" name="color" value="color-2">
+                                                    <label for="color-6">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-7" name="color" value="color-3">
+                                                    <label for="color-7">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-8" name="color" value="color-4">
+                                                    <label for="color-8">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="color-9" name="color" value="color-1" checked>
+                                                    <label for="color-9">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-10" name="color" value="color-2">
+                                                    <label for="color-10">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-11" name="color" value="color-3">
+                                                    <label for="color-11">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-12" name="color" value="color-4">
+                                                    <label for="color-12">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-13" name="color" value="color-1">
+                                                    <label for="color-13">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-14" name="color" value="color-2">
+                                                    <label for="color-14">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-15" name="color" value="color-3">
+                                                    <label for="color-15">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-16" name="color" value="color-4">
+                                                    <label for="color-16">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="innerAccorContent"> 
+                                            <h6>Buttons Color</h6> 
+                                            <div class="custom-radios">  
+                                                <div>
+                                                    <input type="radio" id="color-17" name="btncolor" value="color-4">
+                                                    <label for="color-17">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="color-18" name="btncolor" value="color-1" checked>
+                                                    <label for="color-18">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-19" name="btncolor" value="color-2">
+                                                    <label for="color-19">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-21" name="btncolor" value="color-3">
+                                                    <label for="color-21">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-22" name="btncolor" value="color-4">
+                                                    <label for="color-22">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-23" name="btncolor" value="color-1">
+                                                    <label for="color-23">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-24" name="btncolor" value="color-2">
+                                                    <label for="color-24">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>  
+                                            </div>  
+                                        </div>
+                                        <div class="innerAccorContent"> 
+                                            <h6>Background Color</h6> 
+                                            <div class="custom-radios">  
+                                                <div>
+                                                    <input type="radio" id="color-25" name="bgcolor" value="color-4">
+                                                    <label for="color-25">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="color-26" name="bgcolor" value="color-1" checked>
+                                                    <label for="color-26">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-27" name="bgcolor" value="color-2">
+                                                    <label for="color-27">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-28" name="bgcolor" value="color-3">
+                                                    <label for="color-28">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-29" name="bgcolor" value="color-4">
+                                                    <label for="color-29">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-30" name="bgcolor" value="color-1">
+                                                    <label for="color-30">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-31" name="bgcolor" value="color-2">
+                                                    <label for="color-31">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-32" name="bgcolor" value="color-3">
+                                                    <label for="color-32">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div> 
+                                                <div>
+                                                    <input type="radio" id="color-33" name="bgcolor" value="color-4">
+                                                    <label for="color-33">
+                                                        <span>
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item"> 
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Bio Link alias  </button> 
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <label for="#" class="csLink">
+                                            <span>shor.by/</span>
+                                            <input type="text" value="KcmN">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item"> 
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Ad tracking Pixels </button> 
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p class="addLy">Pixel lists: <button type="button">+</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit Bio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">  
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Bio</label>
+                        <textarea id="exampleFormControlTextarea1" class="form-control" placeholder="type here">A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station</textarea>
+                    </div> 
+                </div>
+                <div class="modal-footer"> 
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">done</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/main.js"></script>
+        <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader(); 
+                reader.onload = function (e) {
+                    $('#blah').attr('src', e.target.result);
+                }; 
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        window.addEventListener('load', () => { 
+
+            // Add block
+            function adBlock() {
+                
+                let AdBlk       = document.querySelector('.addBlockHere')
+                let FrmVlk      = document.querySelector('.blkRealtimeContents')
+                let Submit      = document.querySelector('#submit')
+
+                // Actives - layout styling
+                let NameBlk     = document.querySelector('.nameLink')
+                let NameBlkTitle= document.querySelector('.nameLink .mainTitle')
+                let NameBlkTag  = document.querySelector('.nameLink .tag')
+                let layOuts     = document.querySelectorAll('ul.layoutStyle li')
+                layOuts.forEach(slg => {
+                    slg.addEventListener('click', () => {
+                        layOuts.forEach(all_lays => {
+                            all_lays.classList.remove('active')
+                        })
+
+                        NameBlk.dataset.id = slg.dataset.id;
+                        slg.classList.add('active')
+                    })
+                })
+                
+                // Actives - bottom lists
+                let bottomList  = document.querySelectorAll('ul.BottomList li')
+                bottomList.forEach(slg => {
+                    slg.addEventListener('click', () => {
+                        bottomList.forEach(all_lays => {
+                            all_lays.classList.remove('active')
+                        })
+                        slg.classList.add('active')
+                    })
+                })
+
+                // realtime fileds  
+                let linkInp     = document.querySelector('#link')
+                let titleInp    = document.querySelector('#title')
+                let tagsInp     = document.querySelector('#tags')
+
+                linkInp.addEventListener('keyup', (e) => {
+                    NameBlk.href = e.target.value
+                })
+                titleInp.addEventListener('keyup', (e) => {
+                    NameBlkTitle.textContent = e.target.value
+                })
+                tagsInp.addEventListener('keyup', (e) => {
+                    NameBlkTag.textContent = e.target.value
+                })
+
+
+                // Submit now
+                Submit.addEventListener('click', () => {
+                    let p = document.createElement('a');
+                    p.classList.add('nameLink')
+                    p.setAttribute('href', NameBlk.href);
+                    p.setAttribute('data-id', NameBlk.dataset.id);
+                    p.innerHTML = NameBlk.innerHTML
+                    AdBlk.prepend(p)
+                    
+                })
+
+
+
+
+
+
+            }
+            adBlock()
+
+            // Bio Editing
+            function BioEdition() { 
+                let mname = document.querySelector('.user_bio a')
+                let mBio  = document.querySelector('.user_bio #keepHere')
+
+                let name  = document.querySelector('#exampleFormControlInput')
+                let about = document.querySelector('#exampleFormControlTextarea1')
+                
+                name.addEventListener('keyup', (e) => {
+                    mname.textContent = e.target.value;
+                })
+                about.addEventListener('keyup', (e) => {
+                    mBio.textContent = e.target.value;
+                })
+            }
+            BioEdition()
+
+            // Theme Settings
+            function ThemeSettings() {
+                let settingSec  = document.querySelector('.theSettings');
+                let btn         = document.querySelectorAll('.clOpSeting');
+                btn.forEach(stb => {
+                    stb.addEventListener('click', () => {
+                        settingSec.classList.toggle('active')
+                    })
+                })
+            }
+            ThemeSettings()
+
+
+        })
+        </script>
+    </body>
+</html>
