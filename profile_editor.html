@@ -23,6 +23,9 @@
             <div class="profile-editing-area">
                 <div class="container">
                     <div class="row">
+                        <div class="col-lg-12"><a href="/" class="backBtn"><i class="fal fa-caret-circle-left"></i> Back to Home</a></div>
+                    </div>
+                    <div class="row">
                         <div class="col-lg-6 offset-lg-3">
                             <div class="topUInfos">
                                 <span class="badge badge-secondary d-none d-md-block">Insight</span>
@@ -559,8 +562,7 @@
                     let btnColor    = document.querySelectorAll('.button-color-here input');
                     let bgColor     = document.querySelectorAll('.bg-color-here input');
  
-                    tmColor.forEach(tmCh => {
-                            console.log(tmCh)
+                    tmColor.forEach(tmCh => { 
                         tmCh.addEventListener('click', (e) => {
                             document.querySelector('body').setAttribute('data-theme', e.target.dataset.theme)
                         })
