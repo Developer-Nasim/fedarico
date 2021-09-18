@@ -930,7 +930,6 @@ button#editBio {
   font-size: 18px;
   outline: none;
 }
-
 .headBar span {
   font-size: 22px;
   text-transform: uppercase;
@@ -940,7 +939,8 @@ button#editBio {
   padding: 35px;
   background: #363442;
   margin-top: 20px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .headBar button:last-child{
   background: #15CC72;
@@ -1039,6 +1039,9 @@ ul.BottomList li.active span {
 .addBlockHere .nameLink {
   width: 100%;
   margin: 20px 0; 
+}
+.addBlockHere .nameLink span{
+  pointer-events: none;
 }
 button#settingOptions {
   height: 45px;
@@ -1274,8 +1277,48 @@ p.copyRightText a {
   object-fit: cover;
 }
 
-
-
+.input-group-text{
+  position: relative;
+  cursor: pointer;
+}
+.input-group-text i{
+  pointer-events: none;
+}
+.input-group ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #1b1333;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 19px -6px #373737;
+  border-left: 1px solid #ffffff45;
+  opacity: 0;
+  visibility: hidden;
+}
+.input-group.showtheicons ul{
+  opacity: 1;
+  visibility: visible;
+}
+.input-group ul li {
+  width: 25%;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  border-right: 1px solid #ffffff45;
+  border-bottom: 1px solid #ffffff45;
+  transition: .3s;
+}
+.input-group ul li:hover {
+  color: #333;
+  background: white;
+}
 
 
 
@@ -1286,12 +1329,14 @@ p.copyRightText a {
 .SettingsPopUp,
 .AddBlockPopUp,
 .EditRmBlockPopUp,
+.BlocActionkPopUp,
 .ChangeBio{
   display: none;
 }
 .theSettings.active.settings .SettingsPopUp,
 .theSettings.active.avtrInfo .ChangeBio,
 .theSettings.active.EditRmBlockPopUp .EditRmBlockPopUp,
+.theSettings.active.BlockActionPopup .BlocActionkPopUp,
 .theSettings.active.addBlockPopup .AddBlockPopUp
 {
   display: block;
