@@ -196,6 +196,46 @@
         font-size: 14px;
     }
 
+    .addSection {
+        padding: 20px; 
+    }
+    .headBar span {
+        font-size: 16px; 
+    }
+    .headBar button,.settingBlk h5 button { 
+        max-width: 32px;
+        max-height: 32px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px; 
+    }
+    .nameLink { 
+        width: 100%; 
+    }
+    .addAnything {
+        padding: 15px; 
+        margin-bottom: 10px;
+    }
+    .topUInfos { 
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    } 
+    .settingBlk h5 { 
+        width: 100%; 
+        padding: 20px;
+        font-size: 16px;
+    }
+    .stIt {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .stcklyBar { 
+        min-width: 85%; 
+        background: #ffffff;
+        padding: 9px;
+    }
+
 
 
 

@@ -25,7 +25,7 @@
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3">
                             <div class="topUInfos">
-                                <span class="badge badge-secondary">Insight</span>
+                                <span class="badge badge-secondary d-none d-md-block">Insight</span>
                                 <div class="user_bio">
                                     <label for="avt" class="fst">
                                         <input type="file" id="avt" onchange="readURL(this)" accept="image/*">
@@ -39,7 +39,10 @@
                                         <p><span>Bio -</span>“ <b id="keepHere"> Add Bio </b> ”</p>
                                     </div>
                                 </div>
-                                <span class="badge badge-secondary clOpSeting">Settings</span>
+                                <div class="stIt">
+                                    <span class="badge badge-secondary lastOne d-block d-md-none">Insight</span>
+                                    <span class="badge badge-secondary clOpSeting">Settings</span>
+                                </div>
                             </div>
                             <div class="addAnything">Add Messangers</div>
                             <div class="addAnything">Add Block 
@@ -386,7 +389,7 @@
                                         <button type="button" class="addBlockNow" id="submit"><i class="fal fa-check"></i></button>
                                     </div>
                                     <div class="fields">
-                                        <input type="link" class="form-control" id="link" placeholder="http://url...">
+                                        <input type="link" class="form-control" id="link" placeholder="http://url..." value="http://url...">
                                         <div class="col-auto">
                                             <label class="visually-hidden" for="title">Title</label>
                                             <div class="input-group">
@@ -574,6 +577,7 @@
                     });
                 }
                 ChangingThemes()
+
                 // Theme Settings
                 function ThemeSettings() {
                     let btn         = document.querySelectorAll('.clOpSeting');
@@ -665,7 +669,7 @@
                         let p = document.createElement('a');
                         p.classList.add('nameLink')
                         p.classList.add('visibleBlk')
-                        p.setAttribute('href', NameBlk.href);
+                        p.setAttribute('href', linkInp.value);
                         p.setAttribute('data-id', NameBlk.dataset.id);
                         p.setAttribute('data-action_id', Math.random());
                         p.innerHTML = NameBlk.innerHTML

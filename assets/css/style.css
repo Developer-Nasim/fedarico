@@ -990,6 +990,7 @@ ul.BottomList li {
   margin: 0 10px;
   text-align: center;
   color: #15cc72;
+  width: 95px;
 }
 
 ul.BottomList li span {
